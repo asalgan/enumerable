@@ -21,6 +21,10 @@ load 'seeds.rb'
 # blog: http://vincentcabansag.com
 # email: vince@starterleague.com
 
+# You found me! Love that you used detect here.
+# How about creating a method that search by first_name? And make sure that you return all results of the name.
+# Detect will only return the first thing it finds. So if you did a search with the first name "Dave",
+# then you would a get several results.
 
 specific_student = STUDENTS.detect { |name| name["first_name"] == "Vince"}
 puts "name: #{specific_student["first_name"]} #{specific_student["last_name"]}"
@@ -41,6 +45,10 @@ puts twitter_handles
 # Update your script so that you only show values of a person if they're present
 # We don't want to see "blog: " or "github: "
 
+# You figured it out! Good use of the |key, value| block variables. It gives you access to the values and keys,
+# without hard coding the key names.
+
+# Let's talk about spacing. When you're inside a loop or conditional indent two spaces.
 
 
 STUDENTS.each do |individual_hash|
@@ -51,6 +59,17 @@ STUDENTS.each do |individual_hash|
 	end
 end
 
+# Here's the spacing I recommend based on the code above.
+
+# STUDENTS.each do |individual_hash|
+  
+#   individual_hash.each_pair do |key, value|
+#    if value != nil
+#      puts "#{key}: #{value}"
+#    end
+#  end
+  
+#end
 
 
 # CHALLENGE 4
@@ -71,6 +90,10 @@ end
 
 # Create a method to display the details of a student
 # Create a method to find a student by first name
+
+# Oops! I tried running your script but you had some code on line 77. Comment that out.
+
+# Try creating methods for displaying the output and for finding a student.
 
 def 
 	
